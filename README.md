@@ -1,4 +1,8 @@
-﻿# Phoenix Engine
+# Phoenix Engine
+
+<p align="center">
+  <img src="./assets/phoenix-engine-social-card.png" alt="Phoenix Engine - Scena and Finalis" width="100%">
+</p>
 
 Phoenix Engine is a browser-based creative tool for motion artwork and precision audio finishing.
 
@@ -17,6 +21,14 @@ Phoenix Engine v1.0 consists of two integrated surfaces:
 
 - **Scena**: motion artwork, visual scene design, preview, and video export.
 - **Finalis**: local audio mastering, metering, reference comparison, WAV export, and final export analysis.
+
+### Scena
+
+![Scena live capture](./assets/scena-live-capture.png)
+
+### Finalis
+
+![Finalis live capture](./assets/finalis-live-capture.png)
 
 ## Repository Purpose
 
