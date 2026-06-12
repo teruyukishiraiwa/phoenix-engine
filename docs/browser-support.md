@@ -1,6 +1,6 @@
 ﻿# Browser Support
 
-Phoenix Engine v1.0 is a browser-local media application. Browser support depends on Web Audio, AudioWorklet, WebAssembly, PixiJS rendering, and video export capabilities.
+Phoenix Engine v1.1 is a browser-local media application. Browser support depends on Web Audio, AudioWorklet, WebAssembly, PixiJS rendering, and video export capabilities.
 
 ## Primary Targets
 
@@ -12,7 +12,7 @@ Phoenix Engine v1.0 is a browser-local media application. Browser support depend
 - Firefox desktop: basic app behavior is expected, but video export behavior may differ.
 - Safari desktop: best-effort until physical-device verification is recorded.
 
-## Not Guaranteed in v1.0
+## Not Guaranteed in v1.1
 
 - iOS Safari is not included in the guaranteed support scope.
 - Long-form video export is not formally guaranteed.

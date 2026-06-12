@@ -1,6 +1,6 @@
 ﻿# FFmpeg Core Source Information
 
-Phoenix Engine v1.0 distributes a fixed-source single-thread FFmpeg WebAssembly runtime for browser video muxing and CPU fallback export.
+Phoenix Engine v1.1 distributes the same verified fixed-source single-thread FFmpeg WebAssembly runtime for browser video muxing and CPU fallback export.
 
 ## Distributed Runtime
 

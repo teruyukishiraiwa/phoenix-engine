@@ -1,6 +1,6 @@
 ﻿# Known Issues
 
-This document tracks known limitations for the Phoenix Engine v1.0 public release.
+This document tracks known limitations for Phoenix Engine v1.1.
 
 ## Browser Compatibility
 
@@ -13,10 +13,6 @@ This document tracks known limitations for the Phoenix Engine v1.0 public releas
 - Long-form export memory behavior is not formally guaranteed.
 - CPU-only video export can be slow because it runs in the browser and uses FFmpeg WebAssembly.
 - GPU export depends on browser WebCodecs support and may fall back to CPU export.
-
-## Social Cards
-
-Open Graph and X/Twitter Card validation must be performed after Basic authentication is removed from the public site.
 
 ## Support
 

@@ -66,6 +66,8 @@ This diagram is conceptual. It is intended to explain the public behavior rather
 
 Chroma is a target-guided spectral dynamics stage. It can use Oracle target curves or custom reference data to help shape broad spectral balance without treating the goal as a generic flat response.
 
+In v1.1, Chiaroscuro WebAssembly initialization is bounded. Realtime failure reports a degraded state and continues with Chroma bypassed. Offline export fails explicitly when Chroma is enabled but unavailable; when Chroma is disabled, export skips its WebAssembly initialization.
+
 ### Prism
 
 Prism focuses on low-end control, stereo focus, tilt, air, and spectral contour shaping. It is intended to help the user judge weight, center stability, and tonal contour.
@@ -80,7 +82,7 @@ Ether is the final limiting and monitoring stage. It handles lookahead limiting,
 
 ### Oracle
 
-Oracle provides reference comparison using local factory targets and user-created custom references. Public YouTube URL analysis is disabled in v1.0, and the public app does not use the previously audited Cobalt API.
+Oracle provides reference comparison using local factory targets and user-created custom references. Public YouTube URL analysis is disabled in v1.1, and the public app does not use the previously audited Cobalt API.
 
 ## 6. Metering and Analysis
 
@@ -135,7 +137,7 @@ Finalis depends on:
 - WebAssembly for selected processing components.
 - Browser storage for presets and local configuration.
 
-These requirements make modern desktop browsers the primary target for v1.0.
+These requirements make modern desktop browsers the primary target for v1.1.
 
 ## 10. Privacy and Local Processing
 
@@ -148,6 +150,14 @@ Public YouTube URL analysis is disabled. No Cobalt API request is part of the pu
 Finalis presets store mastering-related settings, reference information, and export-related state. Phoenix Engine project files are broader: they preserve Scena and Finalis state together, but they do not embed the audio file itself.
 
 This separation allows a user to reuse Finalis settings while keeping full project state as a separate concept.
+
+The Finalis session title resolves in this order:
+
+1. Active Phoenix Engine project name.
+2. Active Finalis preset name when no named project is active.
+3. `Phoenix Engine / New Project`.
+
+The source filename remains a separate Source value. Project names and source filenames are masked from Microsoft Clarity session capture.
 
 ## 12. Current Limitations
 

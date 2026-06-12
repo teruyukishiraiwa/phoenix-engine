@@ -6,7 +6,10 @@
 
 Phoenix Engine is a browser-based creative tool for motion artwork and precision audio finishing.
 
-Public release: **June 8, 2026 (JST)**  
+Initial public release: **June 8, 2026 (JST)**
+
+Current documented version: **Phoenix Engine v1.1.0 (unreleased)**
+
 Official site: <https://phxengine.static.jp/>
 
 Created by **Teruyuki Shiraiwa / 白岩晃行**.  
@@ -17,7 +20,7 @@ Phoenix Engine originated from the creative context of **"Phoenix"**, a musical 
 
 ## Product Surfaces
 
-Phoenix Engine v1.0 consists of two integrated surfaces:
+Phoenix Engine v1.1 consists of two integrated surfaces:
 
 - **Scena**: motion artwork, visual scene design, preview, and video export.
 - **Finalis**: local audio mastering, metering, reference comparison, WAV export, and final export analysis.
@@ -55,7 +58,7 @@ Phoenix Engine is designed to run in the browser. Local audio files are imported
 
 Analytics through Google Analytics 4 and Microsoft Clarity is loaded only after consent. Phoenix Engine does not intentionally send audio, artwork, project data, file names, analysis results, or local file paths to these analytics services.
 
-The public v1.0 release does not provide YouTube URL analysis and does not call the previously audited Cobalt third-party API.
+Phoenix Engine v1.1 does not provide YouTube URL analysis and does not call the previously audited Cobalt third-party API.
 
 ## FFmpeg Runtime
 

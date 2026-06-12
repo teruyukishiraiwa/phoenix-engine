@@ -2,14 +2,17 @@
 
 Phoenix Engine is a browser-based environment for motion artwork and precision audio finishing.
 
-Public release: **June 8, 2026 (JST)**  
+Initial public release: **June 8, 2026 (JST)**
+
+Current documented version: **v1.1.0 (unreleased)**
+
 Official site: <https://phxengine.static.jp/>
 
 Phoenix Engine is proprietary software. This repository documents public product behavior, release information, support guidance, and third-party notices. It does not publish application source code.
 
 ## 1. Product Model
 
-Phoenix Engine v1.0 is organized around two integrated surfaces.
+Phoenix Engine v1.1 is organized around two integrated surfaces.
 
 | Surface | Role |
 |---------|------|
@@ -17,6 +20,8 @@ Phoenix Engine v1.0 is organized around two integrated surfaces.
 | **Finalis** | Browser-local audio finishing, metering, reference comparison, WAV export, and final export analysis. |
 
 A Phoenix Engine project can preserve Scena and Finalis state together. The audio file itself is not embedded in the project file, so the user may need to relink the original local audio file when reopening a saved project.
+
+In Finalis, the active project name is the primary session identity. When no named project is active, the current Finalis preset name is used as a fallback. The source filename remains a separate value.
 
 ## 2. System Flow
 
@@ -58,7 +63,7 @@ Phoenix Engine is designed around local browser processing.
 
 - Local audio files are selected by the user.
 - Playback, metering, DSP, WAV export, preview, and browser-local video export run in the browser.
-- The public v1.0 release does not require uploading local audio to a Phoenix Engine server for normal use.
+- Phoenix Engine v1.1 does not require uploading local audio to a Phoenix Engine server for normal use.
 - Public YouTube URL analysis is disabled.
 - The public app does not call the previously audited Cobalt API for YouTube reference analysis.
 
@@ -124,7 +129,7 @@ HTTPS is expected for the public release.
 
 ## 8. FFmpeg Runtime and Transparency
 
-Phoenix Engine v1.0 uses a local-only FFmpeg WebAssembly runtime. It does not fall back to an external FFmpeg CDN.
+Phoenix Engine v1.1 uses a local-only FFmpeg WebAssembly runtime. It does not fall back to an external FFmpeg CDN.
 
 Runtime hashes and source information are documented in:
 
@@ -137,9 +142,8 @@ The public FFmpeg runtime is expected to match `/ffmpeg/manifest.json` on the of
 
 - Chrome and Edge desktop are the primary expected release targets.
 - Firefox and Safari are best-effort until more release data is recorded.
-- iOS Safari is not included in the guaranteed support scope for v1.0.
+- iOS Safari is not included in the guaranteed support scope for v1.1.
 - Long-form video export memory behavior is not formally guaranteed.
-- Social card validation requires Basic authentication to be removed from the public site.
 
 ## 10. Reading Order
 

@@ -61,7 +61,7 @@ The implementation uses a fixed design space so preview and export can share the
 
 ## 4. Templates and Effects
 
-Phoenix Engine v1.0 includes several template concepts:
+Phoenix Engine v1.1 includes several template concepts:
 
 | Template | Role |
 |----------|------|
@@ -123,7 +123,7 @@ Scena video export uses a local-only FFmpeg runtime:
 /ffmpeg/ffmpeg-core.worker.js
 ```
 
-No external FFmpeg CDN fallback is implemented in the public v1.0 release.
+No external FFmpeg CDN fallback is implemented in Phoenix Engine v1.1.
 
 The host must also serve these public asset groups correctly:
 
@@ -144,7 +144,7 @@ Scena relies on:
 - FFmpeg.wasm for muxing and CPU fallback export.
 - Available browser memory for decoded audio, frame capture, and temporary export buffers.
 
-Chrome and Edge desktop are the primary expected release targets. Firefox and Safari are best-effort until more release data is recorded. Long-form video export memory behavior is not formally guaranteed in v1.0.
+Chrome and Edge desktop are the primary expected release targets. Firefox and Safari are best-effort until more release data is recorded. Long-form video export memory behavior is not formally guaranteed in v1.1.
 
 ## 10. Current Limitations
 
@@ -152,7 +152,6 @@ Chrome and Edge desktop are the primary expected release targets. Firefox and Sa
 - Export is browser-local and memory-sensitive.
 - CPU fallback export can be slow.
 - iOS Safari is not currently included in the guaranteed support scope.
-- Social preview validation depends on Basic authentication being removed from the public site.
 
 ## 11. Related Documents
 

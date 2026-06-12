@@ -1,6 +1,6 @@
 ﻿# Privacy
 
-Phoenix Engine v1.0 is designed around browser-local processing.
+Phoenix Engine v1.1 is designed around browser-local processing.
 
 ## Local Files
 
@@ -8,7 +8,7 @@ Local audio files are selected by the user and processed in the browser. Phoenix
 
 ## Third-Party URL Analysis
 
-Public YouTube URL analysis is disabled in v1.0. The public app does not call the previously audited Cobalt API for YouTube reference analysis.
+Public YouTube URL analysis is disabled in v1.1. The public app does not call the previously audited Cobalt API for YouTube reference analysis.
 
 ## Browser Storage
 

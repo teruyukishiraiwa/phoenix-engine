@@ -4,7 +4,8 @@
 
 | Version | Status |
 |---------|--------|
-| v1.0.x | Supported after public release |
+| v1.1.x | Current supported line after release |
+| v1.0.x | Supported during the v1.1 transition |
 
 ## Reporting a Vulnerability
 

@@ -6,6 +6,8 @@ Phoenix Engine provides browser-local export paths for audio and video.
 
 Finalis WAV export renders the current mastering chain in the browser and downloads a local WAV file.
 
+In v1.1, a Chiaroscuro-enabled export stops with an explicit error if the requested WebAssembly processing cannot initialize. When Chiaroscuro is disabled, export does not require that module.
+
 Recommended checks:
 
 - Confirm local audio playback first.
@@ -26,7 +28,7 @@ CPU-only export captures frames and uses the local FFmpeg WebAssembly runtime fo
 
 ## Practical Limits
 
-For v1.0, keep initial export tests short. Long-form export memory behavior is still under review and is not a formal guarantee.
+For v1.1, keep initial export tests short. Long-form export memory behavior is still under review and is not a formal guarantee.
 
 ## FFmpeg
 

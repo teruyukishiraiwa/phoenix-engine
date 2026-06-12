@@ -1,35 +1,41 @@
-﻿# Phoenix Engine v1.0 Release Notes
+# Phoenix Engine v1.1 Release Notes
 
-Release date: **June 8, 2026 (JST)**
+Status: **Unreleased**
 
 Official site: <https://phxengine.static.jp/>
 
 ## Overview
 
-Phoenix Engine v1.0 introduces an integrated browser-local workflow for motion artwork and precision audio finishing.
+Phoenix Engine v1.1 is a stabilization release for the browser-local motion artwork and precision audio finishing workflow introduced in v1.0.
 
-## Scena
+## Reliability
 
-- 1920x1080 canonical visual scene design.
-- Phoenix, Minimal, Classic, and Scena templates.
-- Scena Galaxy visual effect mode.
-- Background, overlay, opening effect, and particle controls.
-- Browser-local video export with GPU/WebCodecs preferred path.
-- CPU-only video export fallback using local FFmpeg WebAssembly runtime.
+- Chiaroscuro WebAssembly initialization now has a bounded failure path.
+- Realtime playback can continue with a visible degraded-mode fallback.
+- Chiaroscuro-enabled export stops explicitly if the requested processing cannot initialize.
+- Chiaroscuro-disabled export no longer waits for the Chiaroscuro WebAssembly module.
 
-## Finalis
+## Finalis Session Identity
 
-- Local audio import and browser-based playback.
-- Input trim, Chroma, Prism, Apex, and Ether processing chain.
-- Precision Spectrum, stereo scope, input and output metering.
-- Oracle local reference comparison and custom references.
-- WAV export and final export analysis.
-- Finalis preset import/export.
+- A saved or loaded Phoenix Engine project name is shown as the Finalis session title.
+- A Finalis preset name remains the fallback when no named project is active.
+- Source file identity remains separate from the project/session identity.
+- Project and source names are masked from Microsoft Clarity session capture.
 
-## Public Release Notes
+## Release Engineering
 
-- FFmpeg uses a same-origin local bundle only.
-- External FFmpeg CDN fallback is not used.
-- Public YouTube URL analysis is disabled.
-- CPU fallback remains available for video export compatibility.
-- Safari is best-effort until physical-device verification is recorded.
+- Public runtime assets are assembled through a reproducible allowlisted process.
+- The release manifest records SHA-256 hashes for every published file except the manifest itself.
+- Production-only social assets are excluded from the application runtime.
+- The fixed-source local FFmpeg runtime remains unchanged.
+
+## Compatibility
+
+- Chrome and Edge desktop remain the primary targets.
+- Firefox and Safari desktop remain best-effort pending final regression records.
+- iOS Safari is not included in the guaranteed v1.1 support scope.
+- CPU video export fallback remains available through the local FFmpeg WebAssembly runtime.
+
+## Previous Release
+
+Phoenix Engine v1.0.0 was initially released on **June 8, 2026 (JST)**.
