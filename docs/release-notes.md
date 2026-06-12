@@ -1,6 +1,6 @@
 # Phoenix Engine v1.1 Release Notes
 
-Status: **Unreleased**
+Release date: **June 13, 2026 (JST)**
 
 Official site: <https://phxengine.static.jp/>
 

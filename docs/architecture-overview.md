@@ -4,7 +4,7 @@ Phoenix Engine is a browser-based environment for motion artwork and precision a
 
 Initial public release: **June 8, 2026 (JST)**
 
-Current documented version: **v1.1.0 (unreleased)**
+Current release: **v1.1.0 - June 13, 2026 (JST)**
 
 Official site: <https://phxengine.static.jp/>
 
